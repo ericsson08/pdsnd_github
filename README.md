@@ -12,6 +12,7 @@ First of all the project consists in load data from different csv files(in which
 From now on we start to analyse different stats from the information of each filters, such as: user stats, station stats, time stats.
 
 
+
 ### Files used
 - chicago.csv,
 - washington.csv,
@@ -23,7 +24,11 @@ It's important to give proper credit. Add links to any repo that inspired you or
 
 https://stackoverflow.com/
 https://www.w3schools.com/
+https://www.girlsguidetopm.com/
+
 
 ### Days working with this Project  
 Start day: 02/10/2021
 End day: 21/10/2021
+
+###
