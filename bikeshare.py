@@ -216,6 +216,17 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+        row = 0
+
+        while True:
+            viewData = input("Would you like to see the raw data? Type 'Yes' or 'No'.")
+            if viewData == "Yes":
+
+                print(df.iloc[row: row + 5,:])
+                row += 5
+            else:
+                break
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
