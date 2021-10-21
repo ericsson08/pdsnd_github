@@ -23,3 +23,7 @@ It's important to give proper credit. Add links to any repo that inspired you or
 
 https://stackoverflow.com/
 https://www.w3schools.com/
+
+### Days working with this Project  
+Start day: 02/10/2021
+End day: 21/10/2021
