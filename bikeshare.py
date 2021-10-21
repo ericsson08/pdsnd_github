@@ -190,21 +190,29 @@ def user_stats(df):
     print(type_user_counts.reset_index().rename(columns={'index': 'User Type',
                                                      'User Type': 'Frequency'}))
 
+
     # TO DO: Display counts of gender
-    gender_counts = df['Gender'].value_counts()
-    print(gender_counts.reset_index().rename(columns={'index': 'Gender',
-                                                     'Gender': 'Frequency'}))
+    try:
+
+        gender_counts = df['Gender'].value_counts()
+        print(gender_counts.reset_index().rename(columns={'index': 'Gender',
+                                                        'Gender': 'Frequency'}))
+
+    except: pass
 
     # TO DO: Display earliest, most recent, and most common year of birth
-    min_birth = df['Birth Year'].min()
-    max_birth = df['Birth Year'].max()
-    mode_birth = df['Birth Year'].mode()
-    print('year of birth --> Earliest: {}, most recent: {}, most common: {}'.
-          format(min_birth, max_birth, mode_birth[0]))
+    try:
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+        min_birth = df['Birth Year'].min()
+        max_birth = df['Birth Year'].max()
+        mode_birth = df['Birth Year'].mode()
+        print('year of birth --> Earliest: {}, most recent: {}, most common: {}'.
+            format(min_birth, max_birth, mode_birth[0]))
 
+        print("\nThis took %s seconds." % (time.time() - start_time))
+        print('-'*40)
+
+    except: pass
 
 def main():
     while True:
